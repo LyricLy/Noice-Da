@@ -1,0 +1,1 @@
+open(__import__("sys").argv[1], "w+").write("nn\n" + "".join([bin(ord(x))[2:].zfill(8).replace("0", " o\n").replace("1", "o \n") for x in input()]))
